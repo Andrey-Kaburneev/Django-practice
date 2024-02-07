@@ -1,0 +1,14 @@
+body{
+    background: #06b472;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+header .head_back{
+    background: #0688c4;
+}
+.head_nav{
+    font-size: 40px;
+    display: inline;
+}
+footer .foot_back{
+    background: #0688c4;
+}
