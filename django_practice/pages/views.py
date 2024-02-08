@@ -4,9 +4,8 @@ from django.http import HttpResponse
 
 
 def integer_info(request):
-    return HttpResponse(
-        '<h1>Здесь будет инфа о числовых типах</h1>'
-    )
+    template_name = 'pages/integer.html'
+    return render(request, template_name)
 
 
 def collection_info(request):
