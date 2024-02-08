@@ -1,9 +1,16 @@
 body{
-    background: #06b472;
+    background: #029e62;
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: medium;
+    font-style: normal;
+    font-weight: 200;
+    color: white;
 }
-header .head_back{
+header{
     background: #0688c4;
+    font-size: large;
+    font-weight: 400;
+    color: white;
 }
 .head_nav{
     font-size: 40px;
@@ -11,4 +18,8 @@ header .head_back{
 }
 footer .foot_back{
     background: #0688c4;
+    font-size: small;
+    font-weight: 100;
+    color: white;
+
 }
