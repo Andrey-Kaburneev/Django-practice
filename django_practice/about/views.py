@@ -1,6 +1,7 @@
-# from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render
+# from django.http import HttpResponse
 
 
 def about(request):
-    return HttpResponse('<h1>О сайте!</h1>')
+    template_name = 'about/about.html'
+    return render(request, template_name)
