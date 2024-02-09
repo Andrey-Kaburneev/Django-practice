@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 # Create your views here.
 
 
@@ -9,36 +9,30 @@ def integer_info(request):
 
 
 def collection_info(request):
-    return HttpResponse(
-        '<h1>Здесь будет инфа о коллекциях</h1>'
-    )
+    template_name = 'pages/collection.html'
+    return render(request, template_name)
 
 
 def string_info(request):
-    return HttpResponse(
-        '<h1>Здесь будет инфа о строковом типе данных</h1>'
-    )
+    template_name = 'pages/string.html'
+    return render(request, template_name)
 
 
 def boolean_info(request):
-    return HttpResponse(
-        '<h1>Здесь будет инфа о булевом типе данных</h1>'
-    )
+    template_name = 'pages/boolean.html'
+    return render(request, template_name)
 
 
 def data_structures_info(request):
-    return HttpResponse(
-        '<h1>Здесь будет инфа о структурах данных</h1>'
-    )
+    template_name = 'pages/data_structures.html'
+    return render(request, template_name)
 
 
 def algorithms_info(request):
-    return HttpResponse(
-        '<h1>Здесь будет инфа о алгоритмах</h1>'
-    )
+    template_name = 'pages/algorithms.html'
+    return render(request, template_name)
 
 
 def method_info(request):
-    return HttpResponse(
-        '<h1>Здесь будет инфа о методах решения алгоритмических задач</h1>'
-    )
+    template_name = 'pages/method.html'
+    return render(request, template_name)
