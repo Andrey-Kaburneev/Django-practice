@@ -11,7 +11,8 @@
         <body>
             {% include "includes/header.html" %}
             <main>
-                {% block content %}Контента пока нет{% endblock %}
+                {% block content %}Контента пока нет{% endblock content %}
+                {% block random %}Темы для повторения нет{% endblock random %}
             </main>
             {% include "includes/footer.html" %}
         </body>

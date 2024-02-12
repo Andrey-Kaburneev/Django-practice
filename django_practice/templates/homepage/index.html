@@ -10,26 +10,29 @@
   </h3>
   <ol>
     <li class="nav-item">
-      <a class="nav-link active" href="pages/integer/">Числовые классы в Python</a>
+      <a class="nav-link active" href="{% url 'pages:integer_info' %}">Числовые классы в Python</a>
     </li>
     <li>
-      <a class="nav-link active" href="pages/collections/">Коллекции в Python</a>
+      <a class="nav-link active" href="{% url 'pages:collection_info' %}">Коллекции в Python</a>
     </li>
     <li>
-      <a class="nav-link active" href="pages/string/">Строковый класс в Python</a>
+      <a class="nav-link active" href="{% url 'pages:string_info' %}">Строковый класс в Python</a>
     </li>
     <li>
-      <a class="nav-link active" href="pages/boolean/">Булевый класс в Python</a>
+      <a class="nav-link active" href="{% url 'pages:boolean_info' %}">Булевый класс в Python</a>
     </li>
     <li>
-      <a class="nav-link active" href="pages/data_structures/">Структуры данных</a>
+      <a class="nav-link active" href="{% url 'pages:data_structures_info' %}">Структуры данных</a>
     </li>
     <li>
-      <a class="nav-link active" href="pages/algorithms/">Алгоритмы</a>
+      <a class="nav-link active" href="{% url 'pages:algorithms_info' %}">Алгоритмы</a>
     </li>
     <li>
-      <a class="nav-link active" href="pages/method/">Методы решения алгоритмических задач</a>
+      <a class="nav-link active" href="{% url 'pages:method_info' %}">Методы решения алгоритмических задач</a>
     </li>
   </ol>
 </nav>
 {% endblock content %}
+{% block random %}
+<h5>Тема для повторения:{{ uniq }}</h5>
+{% endblock random %}
