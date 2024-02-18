@@ -1,21 +1,30 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'homepage:index' %}">Главная страница</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'about:about' %}">О сайте</a>
-              </li>
-              <li class="nav-item">
-            </ul>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          {% with request.resolver_match.view_name as view_name %}
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link {% if view_name == 'homepage:index' %}active{% endif %}"
+              aria-current="page"
+              href="{% url 'homepage:index' %}">
+              Главная страница
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if view_name == 'about:about' %}active {% endif %}"
+              href="{% url 'about:about' %}">
+              О сайте
+              </a>
+            </li>
+            <li class="nav-item">
+          </ul>
+          {% endwith %}
         </div>
-      </nav>
+      </div>
+    </nav>
 </header>

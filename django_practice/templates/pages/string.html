@@ -1,1 +1,15 @@
-<h1>Здесь будет инфа о строковом типе данных</h1>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+<title>Строковый тип данных</title>
+{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<div class="row">
+    <div class="col-3">
+        <p>Страница с собственным css стилем</p>
+    </div>
+</div>
+{% endblock content %}

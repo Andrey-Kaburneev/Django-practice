@@ -8,29 +8,30 @@
   <h3>
     Темы:
   </h3>
-  <ol>
-    <li class="nav-item">
+  <ul class="list-group">
+    <li class="list-group-item">
       <a class="nav-link active" href="{% url 'pages:integer_info' %}">Числовые классы в Python</a>
     </li>
-    <li>
+    <li class="list-group-item list-group-item-primary">
       <a class="nav-link active" href="{% url 'pages:collection_info' %}">Коллекции в Python</a>
     </li>
-    <li>
+    <li class="list-group-item list-group-item-success">
       <a class="nav-link active" href="{% url 'pages:string_info' %}">Строковый класс в Python</a>
     </li>
-    <li>
+    <li class="list-group-item list-group-item-danger">
       <a class="nav-link active" href="{% url 'pages:boolean_info' %}">Булевый класс в Python</a>
     </li>
-    <li>
+    <li class="list-group-item list-group-item-warning">
       <a class="nav-link active" href="{% url 'pages:data_structures_info' %}">Структуры данных</a>
     </li>
-    <li>
+    <li class="list-group-item list-group-item-info">
       <a class="nav-link active" href="{% url 'pages:algorithms_info' %}">Алгоритмы</a>
     </li>
-    <li>
+    <li class="list-group-item list-group-item-dark">
       <a class="nav-link active" href="{% url 'pages:method_info' %}">Методы решения алгоритмических задач</a>
     </li>
-  </ol>
+    <li>
+  </ul>
 </nav>
 {% endblock content %}
 {% block random %}
